@@ -3,9 +3,6 @@ html {
    
     box-sizing: border-box;
   }
-*, *:before, *:after {
-    box-sizing: inherit;
-  }
 
 
 
@@ -178,19 +175,74 @@ footer p span {
 
 .tabla-trabajos {
 
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    
+   display: table-cell;
+   align-content: center;
+    align-self: center;
 }
 
 .tabla-trabajos img {
 
-    
-    width: 580px;
-    height: 390px;
+    height: 250px;
+    width: 250px;
+    object-fit:cover;
+    padding: 20px;
+    margin-left: 80%;
+   
 
-    position: relative ;
+}
+
+.contacto {
+
+display: block;
+}
+
+
+.contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: auto;
+
+}
+
+legend {
+    font-size: 20px;
+    color: #4f4f4f;
+}
+
+label {
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),textarea,select {
+
+  padding: 10px;
+  align-self: center;
+    width: 80%;
+  background-color: #e1e1e1;
+  margin-bottom: 20px;
+  
+
+}
+
+input[type="radio"] {
+
+    width: auto;
+    margin: 0;
+}
+
+
+textarea{
+    height: 150px;
+}
+
+.forma-contacto {
+
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
