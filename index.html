@@ -7,71 +7,106 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
     <title>OldBike Restauración de Bicicletas</title>
 </head>
 
 <body>
-    <header>
-        <div class="barra">
-            <a href="/">
-                <img class="logo" src="img/bike (1).svg" alt="Logo">
-            </a>
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="trabajos.html">Trabajos</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </div>
-    </header>
+    <div class="container-fluid">
+        <header>
+            <div class="barra row ">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.svg" alt="Logo">
+                </a>
 
-    <div class="principal">
-        <main class="centrar">
-
-            <h1>Restauración y reparación de bicicletas</h1>
-            <img src="img/Caballo2016taller.jpg" alt="Taller">
-            <p>Restauramos tu bici para que este nuevamente en el camino, acorde a tus necesidades y al uso que le
-                quieras dar.</p>
-            <p>En nuestro taller llevamos a cabo todo tipo de reparaciones a la bicicleta como centrado de ruedas, cambio de rodamientos, conos, ejes, ajustes de frenos mecanicos.</p>
-
-
-    </main>
-    <div class="servicios centrar">
-        <h2>Nuestros Servicios</h2>
-        <ul class="servicios-lista">
-            <li class="servicio">
-                <h3>Service General</h3>
-                <p>Precio: <span>$1200</span></p>
-                <a href="servicios.html" class="btn">Más información</a>
-
-            </li>
-
-            <li class="servicio">
-                <h3>Restauración de pintura</h3>
-                <p>Precio: <span>$3500</span></p>
-                <a href="servicios.html" class="btn">Más información</a>
-
-            </li>
-        </ul>
-    </div>
-</div>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
-                <p><span>OLD</span>BIKE</p>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="servicios.html">Servicios</a>
-                    <a href="trabajos.html">Trabajos</a>
-                    <a href="contacto.html">Contacto</a>
+                <nav class="navbar navbar-expand-sm justify-content-center navegacion">
+                    <a href="#" class="navbar-brand"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </nav>
 
             </div>
-        </div>
-    </footer>
-</body>
+        </header>
 
+        <div class="principal">
+            <main class="centrar">
+
+                <h1>Restauración y reparación de bicicletas</h1>
+                <img class="img-fluid" src="img/Caballo2016taller.jpg" alt="Taller">
+                <p>Restauramos tu bici para que este nuevamente en el camino, acorde a tus necesidades y al uso que le
+                    quieras dar.<br>
+                    En nuestro taller llevamos a cabo todo tipo de reparaciones a la bicicleta como centrado de ruedas,
+                    cambio de rodamientos, conos, ejes, ajustes de frenos mecanicos.</p>
+
+
+            </main>
+            <div class="servicios centrar">
+                <h2>Nuestros Servicios</h2>
+                <ul class="servicios-lista">
+                    <li class="servicio">
+                        <h3>Service General</h3>
+                        <p>Precio: <span>$1200</span></p>
+                        <a href="servicios.html" type="button" class="btn btn-dark btn-lg">Más información</a>
+
+                    </li>
+
+                    <li class="servicio">
+                        <h3>Restauración de pintura</h3>
+                        <p>Precio: <span>$3500</span></p>
+                        <a href="servicios.html" type="button" class="btn btn-dark btn-lg">Más información</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="contenedor">
+                <div class="barra text-md-center">
+                    <p><span>OLD</span>BIKE</p>
+                <div class="d-none d-sm-none d-md-block">
+                    <nav class="navbar navbar-expand-sm navegacion">
+                        <a href="#" class="navbar-brand"></a>
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="trabajos.html">Trabajos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</div>
 
 </html>

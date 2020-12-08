@@ -7,85 +7,120 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
     <title>OldBike Restauración de Bicicletas</title>
 </head>
 
 <body>
+    <div class="container-fluid">
     <header>
-        <div class="barra">
-            <a href="/">
-                <img class="logo" src="img/bike (1).svg" alt="Logo">
+        <div class="barra row ">
+            <a href="index.html">
+                <img class="logo" src="img/logo.svg" alt="Logo">
             </a>
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="trabajos.html">Trabajos</a>
-                <a href="contacto.html">Contacto</a>
+
+            <nav class="navbar navbar-expand-sm justify-content-center navegacion">
+                <a href="#" class="navbar-brand"></a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="trabajos.html">Trabajos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </nav>
+
         </div>
     </header>
 
 
     <main class="centrar">
         <h2>Contactanos!</h2>
+        <div class="text-center">
+        <form action="/action_page.php" class="was-validated">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" placeholder="Ingrese su nombre completo" name="Nombre Completo" required>
+              <div class="valid-feedback"> Datos validos</div>
+              <div class="invalid-feedback">Complete este campo</div>
+            </div>
 
-        <form class="contacto" action="">
-            <fieldset>
-                <legend>Información Personal</legend>
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" placeholder="Tu nombre" required>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" placeholder="Ingrese su apellido completo" name="Apellido Completo" required>
+                <div class="valid-feedback"> Datos validos</div>
+                <div class="invalid-feedback">Complete este campo</div>
+              </div>
 
-                <label for="email">Email: </label>
-                <input type="email" id="email" placeholder="Tu correo electronico" required>
+              
+            <div class="form-group">
+                <label for="telefono">Apellido:</label>
+                <input type="number" class="form-control" placeholder="Ingrese su telefono" name="Telefono" required>
+                <div class="valid-feedback"> Datos validos</div>
+                <div class="invalid-feedback">Complete este campo</div>
+              </div>
 
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" placeholder="Tu Teléfono">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" placeholder="Ingrese su Email" name="Email" required>
+                <div class="valid-feedback"> Datos validos</div>
+                <div class="invalid-feedback">Complete este campo</div>
+              </div>
 
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje"></textarea>
+              <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" placeholder="Ingrese su mensaje" name="Area de mesn" required></textarea>
+                <div class="valid-feedback"> Datos validos</div>
+                <div class="invalid-feedback">Complete este campo</div>
+              </div>
 
-            </fieldset>
-
-
-            <fieldset>
-                <legend>Contacto</legend>
-                <p>Como desea ser contactado:</p>
-
-                <div class="forma-contacto">
-
-                <label for="telefono">Teléfono</label>
-                <input type="radio" name= "contacto" value="telefono" id="telefono">
-                <label for="correo">Email</label>
-                <input type="radio" name= "contacto" value="correo" id="correo" >
-
-                </div>
-
-
-            </fieldset>
-
-            <input type="submit" value="Enviar" class="btn" >
-
-
-        </form>
-
-
+            
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg">ENVIAR</button>
+          </form>
+        </div>
     </main>
 
     <footer class="footer">
-        <div class="contenedor">
-            <div class="barra">
+        <div class="container-fluid">
+            <div class="barra text-md-center">
                 <p><span>OLD</span>BIKE</p>
-
-                <nav class="navegacion">
-                    <a href="nosotros.html">Nosotros</a>
-                    <a href="servicios.html">Servicios</a>
-                    <a href="trabajos.html">Trabajos</a>
-                    <a href="contacto.html">Contacto</a>
+            <div class="d-none d-sm-none d-md-block">
+                <nav class="navbar navbar-expand-sm navegacion">
+                    <a href="#" class="navbar-brand"></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="trabajos.html">Trabajos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
                 </nav>
+            </div>
 
+            </div>
             </div>
         </div>
     </footer>
+    </div>
 </body>
 
 
